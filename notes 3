@@ -1,2 +1,18 @@
 
-Employee[]
+Employee[] list = new Employee[5];
+
+list[0] = new Employee("Sam" , 6000);
+list[1] = new Manager("Ricky" , 100, 1000000);
+list[2] = new Employee();
+list[3]= new Manager();
+list[4] = new Employee("Ned" , 6000000);
+
+for( int i = 0; i< list.length; i++){
+    System.out.println(list[i]);
+}
+
+for( int i = 0; i< list.length; i++){
+   list[i].display();
+   if(list[i] instanceof Manager){
+   }
+}
