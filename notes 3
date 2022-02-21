@@ -23,4 +23,77 @@ Single inheritance
 
 Multi level inheritance 
 
-Heirachical Inheritance
+Heirachical Inheritance or hybrid.  supported by c++
+////////////////////////////////////////////////////////////////
+
+Abstraction hides the implementation from the user. 
+Abstraction is achieved by using abstract classes and interfaces.
+user gets funcionality. 
+Abstract classes and methods 
+the keyword is abstract 
+abstract class A{ }
+an Abstract method is a method without implementation.
+
+public void abc():
+
+Abstract classes cannot be instantiated or cannot created objects. 
+if we inherit an abstract class we must provide implementation. 
+////////////////////////////////////CODINZG ABSTRACT CLASAS //////////////
+abstract public class Bike{
+    abstract void brake();
+    
+
+}
+
+NEW CLASS 
+
+public class SportsBike extends Bike{
+    public void brake(){
+        System.out.println("SportsBike is slowing down!");
+    
+    }
+
+}
+
+NEW CLASS 
+
+public class MountianBike extends Bike{
+    public void brake(){
+        System.out.println("The Mountain bike is slowing down!");
+    }
+
+}
+
+TESTER CLASS 
+
+public class AbstractionTester {
+    public static void main(String[] args){
+        //Bike b1 = new bike // THIS cannot happen because the class is abstract. 
+        SportsBike s1 = new SportsBike();
+        MountainBike m1 = new MountainBike(): 
+        s1.brake();
+        m1.brake();
+    
+    }
+
+}
+
+Defining an interface type.
+
+Declare a type for the object.
+
+public interface InterfaceName 
+there method accessors are automatically public by defualt.
+The interface type has no constructor. 
+the interface has no instance variables or constructors. NO implementation. 
+
+Use keyword implements
+
+public class BankAccount implements Measurable{
+    public double getMeasure(){
+        return area;
+    
+    }
+
+}
+
