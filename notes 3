@@ -97,3 +97,36 @@ public class BankAccount implements Measurable{
 
 }
 
+////////////
+Using interface for callbacks 
+
+The code that makes the call to the callback receives an object of class the implements this interface.
+
+The average method simply makes a callaback to the measure method whenever it needs to measure any object.
+The average method will ask the AreaMeasurer object to measure the rectangles .
+public class MockObjects {
+	private ArrayList<Double>scores;
+	
+	public MockObjects() {scores = new ArrayList<Double>();}public void 
+	
+	addScore(int studentid, double score ) {
+		
+		//Ignore Student id
+		scores.add(score);
+		
+	}
+	public double getAverageScore(int studentid) {
+		
+		double total =0;
+		for(double x: scores) (total = total+ x) return total/
+				scores.size();
+		
+	}
+	public void save(String filename) {
+		//Do nothing.
+		
+	}
+
+}
+
+
