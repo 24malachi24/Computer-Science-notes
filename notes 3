@@ -129,4 +129,16 @@ public class MockObjects {
 
 }
 
+public interface Measurer{
+	
+	double  measuer( Object anObejct);
+	
+}
+
+import java.awt.rectangle 
+
+public class AreaMeasuser{
+
+
+}
 
