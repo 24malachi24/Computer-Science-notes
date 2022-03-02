@@ -142,3 +142,9 @@ public class AreaMeasuser{
 
 }
 
+
+
+The methods of a inner class can acess all methods in the outside class.
+
+
+
