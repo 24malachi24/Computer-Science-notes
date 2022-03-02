@@ -148,3 +148,33 @@ The methods of a inner class can acess all methods in the outside class.
 
 
 
+/////
+
+Reading and writing text files 
+
+Use scanner class for reading text files 
+to read from a disk file
+Construct a file object representing the input file 
+Use this file object to construct a scanner object 
+Use the scanner methods to read data from the file;.
+
+A loop to process numbers in the input file 
+
+While(in.hasNextdouble)
+
+To write a file construct a PrintWriter ibject 
+
+PrintWriter out = new PrintWriter("output.txt");
+
+If file already exist it is emptied before the new data are written into it.
+
+Use print and println to write into PrintWriter 
+out.println
+out.print("Total:0.02%\n", total);
+
+You must close a file when you are done procesing it 
+in.close();
+out.close();
+
+When the output or input file doesn't exist A FileNotFoundExecption can occur.
+Sample input 32,54,
