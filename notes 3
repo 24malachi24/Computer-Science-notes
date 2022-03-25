@@ -181,3 +181,89 @@ Sample input 32,54,
 
 Array's can be added and removed.
 
+
+
+
+
+Recursion/////
+
+//This class holds a one arguement constructor. 
+//It computes the area of the triangle 
+@return the area.
+
+
+public class Trianlge{
+	 private int width;
+	 
+	 public Triangle(int width){
+	 this.width = width;
+	 
+	 
+	 }
+public int getArea(){
+	 if(width<=0)
+	 return 0;
+	 
+	 else if(width==1) 
+	 return 1;
+		
+	else {
+	Trianlge smaller = new Triangle(width -1);
+	return smaller.getArea()+ width;
+		
+		}
+		
+//Second way of getting the area.
+
+	public int getArea2nd(){
+	int area = 0;
+	for( int i = 1; i< width; i++){
+		area += i;
+	}
+		return area;
+	
+	
+	}
+	
+//Third way of getting the area, using mathmatical expression 
+
+	public int getArea3rd(){
+	
+	return width*(width+1)/2 ;
+	
+	}
+	
+	}
+
+}
+
+
+
+
+
+
+TESTER CLASS//
+
+public class TriangleTester{
+	 public static void main(String[] args){
+	 
+	 Triangle t = new Triangle(5);
+	 System.out.println("recursion:" + t.getArea());
+	 System.out.println("iteration:" + t.get2ndArea());
+	  System.out.println("Math Expression:" + t.get3rdArea()):
+	 System.out.println("Expeceted:  15");
+	 
+	 
+	//Test all the methods.
+	
+	
+	 
+	 }
+	 
+	 
+
+
+
+
+}
+
